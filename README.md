@@ -1,4 +1,3 @@
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -25,8 +24,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 The Client
 You are contracted by Marketing Association New Zealand to build a quick page as a template for their new digital news home page.
