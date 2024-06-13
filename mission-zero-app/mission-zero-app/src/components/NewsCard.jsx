@@ -1,41 +1,40 @@
-import NewsItem from "./NewsItem";
 import { useEffect, useState } from "react";
+import styles from './NewsCard.module.css';
 
 const NewsCard = () => {
-  const [articles, setArticles] = useState([]);
-  const [error, setError] = useState(null); // New state for error handling
+  const [missionData, setMissionData] = useState([]);
+  const url = '../public/data.json'; 
 
   useEffect(() => {
-    const url = `https://api.scaleserp.com/search?api_key=${import.meta.env.VITE_API_KEY}&q=marketing-industry-news&location=New+Zealand&google_domain=google.co.nz&gl=nz&hl=en&time_period=last_year&device=desktop&output=json&sort_by=relevance&engine=google`;
-  
-    fetch(url)
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res.json();
-      })
-      .then((data) => setArticles(data.articles))
-      .catch((err) => {
-        setError(err.message); // Set error message
-      });
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+        setMissionData(data);
+      } catch (error) {
+        console.error('Unable to fetch data from API:', error);
+      }
+    };
+    fetchData();
   }, []);
 
   return (
-    <div>
-      <h2 className="text-center">Latest <span className="badge bg-danger">News</span></h2>
-      {error ? (
-        <p className="text-danger">Error fetching news: {error}</p>
-      ) : (
-        articles.map((data, index) => (
-          <NewsItem
-            key={index}
-            displayed_link={data.displayed_link}
-            title={data.title}
-            snippet={data.snippet}
-            link={data.link}/>
-        ))
-      )}
+    <div className={styles.gridContainer}>
+      {missionData.map((data, index) => (
+        <div key={index} className={styles.missionCard}>
+          <div className="card bg-dark text-light mb-3 d-inline-block my-3 mx-3 px-2 py-2" style={{ maxWidth: "345px" }}>
+            <div className="card-header">{data.type}</div>
+            <img src={data.image} className="card-img-top" alt={data.title} />
+            <div className="card-body">
+              <h5 className="card-title">{data.title.slice(0, 50)}</h5>
+              <p className="card-text">{data.description?.slice(0, 90)}</p>
+              <a href={data.url} className="btn btn-primary">Read More</a>
+              <p className="date-location">{data.date} {data.location}</p>
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
