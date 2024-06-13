@@ -1,0 +1,10 @@
+.gridContainer {
+    width: 100%;
+    padding-left: 100px;
+  }
+  
+  .missionCard {
+    text-align: center;
+    display: grid;
+    grid-template-columns: (1, 1, 1);
+  }

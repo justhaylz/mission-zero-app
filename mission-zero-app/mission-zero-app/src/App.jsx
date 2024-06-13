@@ -4,14 +4,13 @@ import NewsCard from './components/NewsCard'
 
 
 function App() {
-
+const fetchedData = '../public/data.json'
 
 
   return (
     <div>
     <NavBar />
-    <NewsCard  />
-
+    <NewsCard data={fetchedData} />
     </div>
   )
 }

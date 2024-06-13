@@ -1,0 +1,29 @@
+[
+    {
+    "type": "Training",
+    "url": "https://marketing.org.nz/agencymedia-june-2024",
+    "title": "Agency and Media Transparency",
+    "image": "../assets/display1.webp",
+    "description": "Join international expert David Reid to gain a greater appreciation of the importance of your...",
+    "date": "18 Jun 2024",
+    "location": "Auckland"
+    },
+    {
+    "type": "EVENT",
+    "url": "https://marketing.org.nz/monthly-meetup/akl/jun/2024",
+    "title": "Monthly Marketing Meetup",
+    "image": "../assets/display2.webp",
+    "description": "Once a month, the Auckland marketing community meets at the MA in Parnell for an evening of networking.",
+    "date": "25 Jun 2024",
+    "location": "Auckland"
+    },
+    {
+    "type": "TRAINING",
+    "url": "https://marketing.org.nz/breakthrough-marketing-plans-workshop/wlg/june/2024",
+    "title": "Breakthrough Marketing Plans",
+    "image": "../assets/display3.webp",
+    "description": "Based on the best seller from Professor Tim Collins of Kellogg School of Management.",
+    "date": "25 Jun 2024",
+    "location": "Wellington"
+    }    
+]
