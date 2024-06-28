@@ -1,0 +1,22 @@
+.eventCard{
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  color: white;
+  border-color: rgb(177, 32, 32);
+  border-width: 20px;
+  column-gap: 100px;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+/*MEDIA ENQUIRIES*/
+/*Small devices */
+@media screen and (max-width: 575px) {
+  .eventCard {
+    flex-direction: column;
+    column-gap: 300px;
+    margin-left: 0;
+  }
+}
