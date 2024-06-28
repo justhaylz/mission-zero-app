@@ -35,15 +35,11 @@ Build an application using any front-end framework of your choice with a home pa
 You can use your own color palette and pictures.
 Search functionality need not be implemented.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
 
 * [![React][React.js]][React-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -73,9 +69,9 @@ Search functionality need not be implemented.
    -npm install
    -npm install node
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Page Example
+
+### Brief Page Example
 
 <img width="947" alt="image" src="https://github.com/justhaylz/mission-zero-app/assets/158859106/fd73c07c-4536-4eb5-a6b2-caf7f344f82a">
 
@@ -86,7 +82,7 @@ Hayley Smith
 
 GitHub Link: https://github.com/justhaylz/mission-zero-app.git
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Thank you and Have a Meke Day ;)
 
 
 
