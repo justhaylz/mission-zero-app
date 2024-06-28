@@ -1,0 +1,38 @@
+.image {
+    height: 400px;
+    width: 1265px;
+}
+
+.input {
+    margin-left: 300px;
+    width: 500px;
+    height: 30px;
+}
+
+.btn {
+    margin-right: 300px;
+    color: white;
+    background-color: red;
+    width: 50px;
+    height: 36px;
+
+    
+}
+
+/*MEDIA ENQUIRY*/
+@media screen and (max-width: 575px) {
+    .image {
+      width: 500px;
+    } 
+    .input{
+      width: 60%;
+      margin-left: 100px;
+      margin-top: 30px;
+    }
+    .btn {
+      margin-left: 220px;
+      margin-top: 10px;
+  
+    }
+  }
+  
