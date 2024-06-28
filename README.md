@@ -53,7 +53,11 @@ Search functionality need not be implemented.
 
 - create you react.js app = create vite@latest
 - Build your folder structure
-- Add components: NewsCard, NavBar, NewsCard.module.css
+- Add components:
+  -NavBar.jsx and NavBar.module.css
+  -Banner.jsx and Banner.module.css
+  -EventCard.jsx and Event.module.css
+  -ErrorBoundary.jsx
 - Add json file in public folder for data retrieval
 - Add the required images to assets
 
@@ -68,17 +72,13 @@ Search functionality need not be implemented.
 1. Clone the repo:  git clone [https://github.com/github_username/repo_name.git](https://github.com/justhaylz/mission-zero-app.git)
 2. Install NPM packages
    -npm install
-   -npm install bootstrap
    -npm install node
-   -npm install cors and configure
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### NavBar
+### Page Example
 
-### 
-
-### NewsCard
+<img width="947" alt="image" src="https://github.com/justhaylz/mission-zero-app/assets/158859106/fd73c07c-4536-4eb5-a6b2-caf7f344f82a">
 
 <!-- CONTACT -->
 ## Contact
