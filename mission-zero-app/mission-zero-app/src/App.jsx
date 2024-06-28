@@ -1,18 +1,18 @@
-import './App.css'
-import NavBar from './components/NavBar'
-import NewsCard from './components/NewsCard'
+import './App.css';
+import NavBar from './components/NavBar';
+import Banner from './components/Banner';
+import EventCard from './components/EventCard';
 
-
-function App() {
-const fetchedData = '../public/data.json'
-
-
+const App = () => {
   return (
-    <div>
+    <>  
     <NavBar />
-    <NewsCard data={fetchedData} />
-    </div>
-  )
-}
+    <Banner />
+    <br />
+    <EventCard />
+    <br />
+    </>
+  );
+};
 
-export default App
+export default App;
